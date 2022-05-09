@@ -1,4 +1,4 @@
-## JAVA Optional
+## JAVA8 Optional
 
 ### 자바에서 NULL로 인해 발생할 수 있는 문제는
 - 런타임에 NPE(NullPointerException)라는 예외를 발생시킬 수 있습니다.
