@@ -1,4 +1,4 @@
-## Lombook(@Data)
+## Lombook
 
 ### 어노테이션
 
@@ -19,3 +19,6 @@
     3) (callSuper = true) : 부모 클래스 필드 값들도 동일한지 체크하며, false(기본값)일 경우 자신 클래스의 필드 값만 고려한다.
 
 - @Data : @Getter, @Setter, @RequiredArgsConstructor, @ToString, @EqualsAndHashCode를 한번에 설정해주는 어노테이션이다.
+
+- @Builder와 @NoArgsConstructor와 같이 사용할 수 없는 이유
+https://wooktae.tistory.com/34
