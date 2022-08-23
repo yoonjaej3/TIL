@@ -67,3 +67,18 @@ find . -type f -exec grep "test" {} \;
 # 현재 디렉토리에 ".txt" 확장자를 찾아서 모두 삭제
 find . -name "*.txt" -exec rm {} \;
 ```
+### 특정 디렉토리에 find 조건에 맞는 결과 값이 몇개 존재하는지
+```
+$ find ./ -type f | wc -l
+4
+```
+
+### 확장자가 .jpg인 파일만 찾아서 바로 삭제
+
+```
+$ find ./ -name "*.jpg" -exec rm {} \;
+$ ls
+dir1/  dir2/  dir3/  dir4/  file1  file2  file3  file4
+```
+
+https://itholic.github.io/linux-basic-command/
