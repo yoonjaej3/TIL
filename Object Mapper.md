@@ -57,9 +57,13 @@ String carAsString = objectMapper.writeValueAsString(request);
 ```
 String jsonCarArray = 
   "[{ \"color\" : \"Black\", \"type\" : \"BMW\" }, { \"color\" : \"Red\", \"type\" : \"FIAT\" }]";
-ObjectMapper objectMapper = new ObjectMapper();
 List<Car> listCar = objectMapper.readValue(jsonCarArray, new TypeReference<List<Car>>(){});
-// print cars
+```
+
+```
+String json = "{ \"color\" : \"Black\", \"type\" : \"BMW\" }";
+Map<String, Object> map 
+  = objectMapper.readValue(json, new TypeReference<Map<String,Object>>(){});
 ```
 
 
